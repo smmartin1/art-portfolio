@@ -1,0 +1,58 @@
+[
+    {
+        "_id": "1",
+        "name": "Bee",
+        "camera": "Canon Eos Rebel T5",
+        "description": "A bee pollenating a flower.",
+        "type": "photography",
+        "imagePath": "./img/Photography/Bee.jpg"
+    },
+    {
+        "_id": "2",
+        "name": "Cherry Blossoms",
+        "camera": "Canon Eos Rebel T5",
+        "description": "A cherry blossom branch in full bloom.",
+        "type": "photography",
+        "imagePath": "./img/Photography/CherryBlossoms.JPG"
+    },
+    {
+        "_id": "3",
+        "name": "Delaware Canal",
+        "camera": "iPhone 12 Pro",
+        "description": "The Delaware Canal between Yardley and Morrisville.",
+        "type": "photography",
+        "imagePath": "./img/Photography/DelawareCanal.jpg"
+    },
+    {
+        "_id": "4",
+        "name": "Seagull",
+        "camera": "iPhone 12 Pro",
+        "description": "A seagull on the beach at Ocean City, NJ.",
+        "type": "photography",
+        "imagePath": "./img/Photography/Seagull.jpg"
+    },
+    {
+        "_id": "5",
+        "name": "Sunset",
+        "camera": "iPhone 8",
+        "description": "A sunset over at Disney Springs.",
+        "type": "photography",
+        "imagePath": "./img/Photography/Sunset.jpg"
+    },
+    {
+        "_id": "6",
+        "name": "Tangled Lanterns",
+        "camera": "iPhone 12 Pro",
+        "description": "The Tangled Lanterns outside the Tangled themed bathrooms in Magic Kingdom at Walt Disney World.",
+        "type": "photography",
+        "imagePath": "./img/Photography/TangledLanterns.jpg"
+    },
+    {
+        "_id": "7",
+        "name": "The Beach",
+        "camera": "iPhone 12 Pro",
+        "description": "The North Street Beach in Ocean City, NJ",
+        "type": "photography",
+        "imagePath": "./img/Photography/TheBeach.jpg"
+    }
+]

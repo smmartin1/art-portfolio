@@ -1,0 +1,26 @@
+[
+    {
+        "_id": "1",
+        "name": "Clara",
+        "software": "Procreate",
+        "description": "Clara holding a nutcracker from the ballet, The Nutcracker",
+        "type": "digital",
+        "imagePath": "./img/Digital/Clara.JPG"
+    },
+    {
+        "_id": "2",
+        "name": "Tangled",
+        "software": "Procreate",
+        "description": "The famous boat scene from Tangled",
+        "type": "digital",
+        "imagePath": "./img/Digital/Tangled.jpeg"
+    },
+    {
+        "_id": "3",
+        "name": "Psalm 103 15",
+        "software": "Procreate",
+        "description": "Typography of a quote from the book of Psalms",
+        "type": "digital",
+        "imagePath": "./img/Digital/Psalm103-15.jpg"
+    }
+]

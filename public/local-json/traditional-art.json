@@ -1,0 +1,65 @@
+[
+    {
+        "_id": "1",
+        "name": "The Shire",
+        "medium": {
+            "first": "watercolor",
+            "second": "gouache"
+        },
+        "description": "A Hobbit home done in watercolor and gouache.",
+        "type": "traditional",
+        "imagePath": "./img/Traditional/TheShire.jpg"
+    },
+    {
+        "_id": "2",
+        "name": "Snufkin",
+        "medium": {
+            "first": "watercolor",
+            "second": "gouache"
+        },
+        "description": "Snufkin from Moomin done in watercolor and gouache.",
+        "type": "traditional",
+        "imagePath": "./img/Traditional/Snufkin.jpg"
+    },
+    {
+        "_id": "3",
+        "name": "Turnips",
+        "medium": {
+            "first": "color pencil"
+        },
+        "description": "A basket of turnips done in color pencil.",
+        "type": "traditional",
+        "imagePath": "./img/Traditional/Turnips.jpeg"
+    },
+    {
+        "_id": "4",
+        "name": "Appa",
+        "medium": {
+            "first": "watercolor",
+            "second": "gouache"
+        },
+        "description": "Appa flying in the sky from Avatar The Last Airbender.",
+        "type": "traditional",
+        "imagePath": "./img/Traditional/Appa.JPG"
+    },
+    {
+        "_id": "5",
+        "name": "Fairy",
+        "medium": {
+            "first": "gouache"
+        },
+        "description": "A fairy with flowers",
+        "type": "traditional",
+        "imagePath": "./img/Traditional/Fairy.jpg"
+    },
+    {
+        "_id": "6",
+        "name": "Trakai Castle",
+        "medium": {
+            "first": "color pencil"
+        },
+        "description": "Trakai Castle in Lithuania",
+        "type": "traditional",
+        "imagePath": "./img/Traditional/TrakaiCastle.jpg"
+    }
+]
