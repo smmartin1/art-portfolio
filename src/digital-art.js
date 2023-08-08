@@ -1,20 +1,23 @@
 import {useState, useEffect} from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Modal, Button  } from 'react-bootstrap';
 
 import './App.css';
 
 export const Digital = () => {
     const [digital, setDigital] = useState([]);
     const [viewDigital, setViewDigital] = useState(digital);
-    const [hoverID, setHoverID] = useState();
+    const [modalID, setModalID] = useState();
+    const [viewModal, setViewModal] = useState(false);
 
-    const onHover = (id) => {
-        setHoverID(id);
+    const modalOpen = (id) => {
+        setModalID(id);
+        setViewModal(true);
     }
 
-    const onHoverOver = () => {
-        setHoverID(undefined);
-    };
+    const modalClose = () => {
+        setModalID(undefined);
+        setViewModal(false);
+    }
 
     useEffect(()=>{
         fetch('./local-json/digital-art.json', {
@@ -58,24 +61,41 @@ export const Digital = () => {
                 <Container>
                     <Row>
                         <>
-                            <h2>Digital Art</h2>
+                            <h1>Digital Art</h1>
 
                             {viewDigital.map((piece) => (
                                 <Col md={4} className="gallery">                   
                                     <img
-                                        onMouseEnter={() => onHover(piece.id)}
-                                        onMouseLeave={onHoverOver}
+                                        onClick={() => modalOpen(piece.id)}
                                         src={piece.image} 
                                         alt={piece.name} 
                                         className='art' 
                                     />
                                     
-                                    {hoverID === piece.id
+                                    {modalID === piece.id
                                         ? (
-                                            <div className="piece-info">
-                                                <h4>{piece.name}</h4>
-                                                <p>{piece.description}</p>
-                                            </div>
+                                            <Modal show={viewModal} onHide={modalClose} id="piece-modal">
+                                                <div className="piece-info">
+                                                    <Modal.Header closeButton>
+                                                        <h2>{piece.name}</h2>
+                                                    </Modal.Header>
+
+                                                    <Modal.Body>
+                                                        <div className="modal-body">
+                                                            <img
+                                                                src={piece.image} 
+                                                                alt={piece.name} 
+                                                                className='modal-art' 
+                                                            />
+                                                            <p className="piece-description">{piece.description}</p>
+                                                        </div>
+                                                    </Modal.Body>
+
+                                                    <Modal.Footer>
+                                                        <Button variant="secondary" id='modal-btn' onClick={modalClose}>Close</Button>
+                                                    </Modal.Footer>
+                                                </div>                                        
+                                            </Modal>
                                         )
                                         : ""
                                     }

@@ -3,17 +3,37 @@
   margin-bottom: 10px;
 }
 
+.modal-body {
+  display: flex;
+  margin: 0 3px;
+}
+
 .modal-art {
-  width: 200px;
+  width: 250px;
+  float: left;
+  margin-right: 20px;
+}
+
+#modal-btn {
+  background-color: #87A7A8;
+  border-style: none;
+}
+
+.piece-description {
+  font-size: 18px;
 }
 
 .piece-info {
-  background-color: #CEEDF2;
-	width: 550px;
+  background-color: #BAE6E8;
+  width: 600px;
+  border-radius: 2%;
 }
 
-.gallery {
-  margin-top: 10px;
+h1, h2 {
+  text-decoration: underline;
 }
 
-h4 {text-decoration: underline;}
+h1 {
+  text-align: center;
+  padding: 15px 0;
+}

@@ -60,7 +60,7 @@ export const Traditional = () => {
                 <Container>
                     <Row>
                         <>
-                            <h2>Traditional Art</h2>
+                            <h1>Traditional Art</h1>
 
                             {viewArt.map((piece) => (
                                 <Col md={4} className="gallery">
@@ -73,24 +73,31 @@ export const Traditional = () => {
 
                                     {modalID === piece.id
                                         ? (
-                                            <Modal show={viewModal} onHide={modalClose}>
-                                                <Modal.Header closeButton className="piece-info">
-                                                    <h4>{piece.name}</h4>
-                                                </Modal.Header>
+                                            
+                                                <Modal show={viewModal} onHide={modalClose} id="piece-modal">
+                                                    <div className="piece-info">
+                                                        <Modal.Header closeButton>
+                                                            <h2>{piece.name}</h2>
+                                                        </Modal.Header>
 
-                                                <Modal.Body className="piece-info">
-                                                    <img
-                                                        src={piece.image} 
-                                                        alt={piece.name} 
-                                                        className='modal-art' 
-                                                    />
-                                                    <p>{piece.description}</p>
-                                                </Modal.Body>
+                                                        <Modal.Body>
+                                                            <div className="modal-body">
+                                                                <img
+                                                                    src={piece.image} 
+                                                                    alt={piece.name} 
+                                                                    className='modal-art' 
+                                                                />
+                                                                <p className="piece-description">{piece.description}</p>
+                                                            </div>
+                                                        </Modal.Body>
 
-                                                <Modal.Footer className="piece-info">
-                                                    <Button variant="secondary" onClick={modalClose}>Close</Button>
-                                                </Modal.Footer>
-                                            </Modal>
+                                                        <Modal.Footer>
+                                                            <Button variant="secondary" id='modal-btn' onClick={modalClose}>Close</Button>
+                                                        </Modal.Footer>
+                                                    </div>                                        
+                                                </Modal>
+                                            
+                                            
                                         )
                                         : ""
                                     }
